@@ -13,8 +13,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 // services
 import { HttpClientModule } from '@angular/common/http';
 import { SignupService } from '../../Services/signup.service';
+import { RegisterComponent } from './register/register.component';
 @NgModule({
-  declarations: [RecoverPasswordComponent, LoginComponent, SignUpComponent],
+  declarations: [RecoverPasswordComponent, LoginComponent, SignUpComponent, RegisterComponent],
   imports: [
     CommonModule,
     FormsModule,

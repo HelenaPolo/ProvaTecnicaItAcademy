@@ -8,10 +8,13 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { NavbarRegisteredComponent } from './Components/navbar-registered/navbar-registered.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { StarshipsListComponent } from './Views/starships/starships-list/starships-list.component';
-//import { StarshipDetailComponent } from './Views/starships/starship-detail/starship-detail.component';
 import { HomepageComponent } from './Views/homepage/homepage.component';
 import { HttpClientModule } from '@angular/common/http';
-//import { LoginComponent } from './Services/login/login.component';
+import { RegisterComponent } from './Views/Start/register/register.component';
+import { LoginComponent } from './Views/Start/login/login.component';
+import { FormsModule } from '@angular/forms';
+import { CookieService } from 'ngx-cookie-service';
+
 
 @NgModule({
   declarations: [
@@ -21,17 +24,18 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarRegisteredComponent,
     NavbarComponent,
     StarshipsListComponent,
-    //StarshipDetailComponent,
     HomepageComponent,
-    //LoginComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
     
   ],
-  providers: [],
+  providers: [ CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
