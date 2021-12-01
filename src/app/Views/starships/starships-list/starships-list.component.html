@@ -1,0 +1,138 @@
+THERE!!!
+<div class="container">
+    <h4 class="text-center py-5">Starships List</h4>
+    <!-- Search -->
+    <div class="row mb-5">
+      <div class="col-sm-12 d-inline-flex justify-content-end ">
+        <div class="col-sm-3 me-4">
+          <input class="form-control me-4 rounded-pill" type="search"
+            placeholder="Search..." aria-label="Search">
+        </div>
+      </div>
+    </div>
+  
+    <!-- Starship data -->
+    <div class="table-responsive mb-5">
+      <table class="table align-middle">
+        <thead>
+          <tr>
+            <th scope="col">Starship Name</th>
+            <th scope="col">Model</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let starship of starships, let i = index" 
+          [class.selected]='starship === selectedStarship'>
+            <td (click)='goStarshipDeatail(i)' >{{ starship.name }}</td>
+            <td>{{ starship.model }}</td>
+            
+            <!--<app-starship-detail [starship]='selectedStarship'></app-starship-detail>-->
+
+            
+            <!-- Modal -->
+            <!--
+            <div class="modal fade modalMessage" [id]="'delete'+i" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">
+                      {{ "Clients-list.modal.title" | translate }}
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+  
+                  <div class="modal-body">
+                    {{ 'Clients-list.modal.message' | translate }} "{{client.name_and_surname}}"?
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn appButton text-uppercase" data-bs-dismiss="modal">
+                      {{ "Clients-list.modal.button-no" | translate }}
+                    </button>
+                    <button type="button" class="btn btn-primary deleteButton text-uppercase" (click)="delete(i)"
+                      data-bs-dismiss="modal">
+                      {{ 'Clients-list.modal.button-delete' | translate }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Alert delete client-->
+    <!--
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              {{ 'Client.modal.delete.title' | translate }}
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+  
+          <div class="modal-body">
+            {{ 'Client.modal.delete.message' | translate }}
+          </div>
+  
+          <div class="modal-footer">
+            <button type="button" class="btn appButton text-uppercase" data-bs-dismiss="modal">
+              {{ 'Client.modal.delete.button-no' | translate }}
+            </button>
+            <button type="button" class="btn btn-primary deleteButton text-uppercase" data-bs-dismiss="modal">
+              {{ 'Client.modal.delete.button-delete' | translate }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <!-- Pagination 
+    <div class="row d-flex justify-content-end mb-5">
+       Page numbers
+      <div class="
+          col-12 col-lg-8
+          d-flex
+          flex-column
+          justify-content-center
+          align-items-center
+        ">
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li class="page-item" [ngClass]="{'disabled': isFirstPage()}">
+              <a class="page-link rounded-circle" href="#" aria-label="Previous" (click)="gotoPrevPage();">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li *ngFor="let page of pagesArray" class="page-item" [ngClass]="{'disabled': page == currentPage}">
+              <a class="page-link rounded-circle" href="#" (click)="goToPage(page)">{{ page }}</a>
+            </li>
+            <li class="page-item" [ngClass]="{'disabled': isLastPage()}">
+              <a class="page-link rounded-circle" href="#" aria-label="Next" (click)="gotoNextPage()">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+       Go to page section 
+      <div class="
+          col-12 col-lg-3
+          d-flex
+          justify-content-end
+          align-items-center align-self-center
+        ">
+        <p class="text-center p-0 m-0 no-wrap">
+          {{ "Clients-list.literals.go-to-page" | translate }}:
+        </p>
+        <div class="col-3 col-sm-2 col-md-1 col-lg-3 me-2 ms-2">
+          <input type="search" class="form-control rounded-pill" aria-label="go to page" pattern="[0-9]*" value=""
+            [(ngModel)]="pageToGo">
+        </div>
+        <button type="button" class="btn btn-erp-blue text-erp-white rounded-pill" (click)="goToPage(pageToGo)">
+          {{ "Clients-list.button.go" | translate }}
+        </button>
+      </div>
+    </div>-->
+  </div>

@@ -1,0 +1,15 @@
+<div class="container-fluid p-0">
+  <!-- HEADER -->
+  <div class="container-fluid p-0 position-sticky top-0 z-2000"> <!-- *ngIf="token.length > 0; else adminNavbar">-->
+    <app-header> <!-- [_showSidebar]="showSidebar" (showSidebar)="toggleShowSidebar($event)
+        ">--></app-header>
+  </div> 
+  <!-- ROUTES -->
+  <div class="container-fluid">        
+    <router-outlet></router-outlet>
+  </div>
+  <!-- FOOTER -->
+  <div class="container-fluid">
+    <app-footer></app-footer>
+  </div>
+</div>
