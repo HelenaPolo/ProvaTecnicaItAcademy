@@ -32,25 +32,9 @@ export class StarshipsService {
       { headers }
     );*/
   }
-  getStarshipById(id: number){
-    return this.httpClient.get(`${this.url}${this.endPoint}/${id}`)
+  getStarshipById(id: string){
+    return this.httpClient.get(id);
+
   }
-
-  /*getStarshipByUrl(id: number){
-    return this.httpClient.get(this.url);
-    console.log(this.url);
-    console.log()
-  }*/
-
-  /*getStarshipByName(name: string) {
-    const headers = new HttpHeaders({
-      //Authorization: this.token,
-    });
-    return this.httpClient.get(`${this.url}${this.endPoint}/${name}`, {
-      headers, 
-    });
-  }*/
-
-
 }
 

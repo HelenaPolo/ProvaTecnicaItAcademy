@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+/*import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Starships } from 'src/app/Models/starships';
 import { StarshipsService } from 'src/app/Services/starships.service';
@@ -35,7 +35,7 @@ export class StarshipDetailComponent implements OnInit {
       this.loadStarship(params['id']);
     });
   }
-  loadStarship(id: number) {
+  loadStarship(id: string) {
     this.starshipsService.getStarshipById(id).subscribe(
       (data: any) => {
         if (!data) {
@@ -57,6 +57,6 @@ export class StarshipDetailComponent implements OnInit {
       })
     }
   }
-
+*/
      
 

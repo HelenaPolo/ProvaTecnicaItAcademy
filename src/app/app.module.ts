@@ -8,7 +8,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { NavbarRegisteredComponent } from './Components/navbar-registered/navbar-registered.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { StarshipsListComponent } from './Views/starships/starships-list/starships-list.component';
-import { StarshipDetailComponent } from './Views/starships/starship-detail/starship-detail.component';
+//import { StarshipDetailComponent } from './Views/starships/starship-detail/starship-detail.component';
 import { HomepageComponent } from './Views/homepage/homepage.component';
 import { HttpClientModule } from '@angular/common/http';
 //import { LoginComponent } from './Services/login/login.component';
@@ -21,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarRegisteredComponent,
     NavbarComponent,
     StarshipsListComponent,
-    StarshipDetailComponent,
+    //StarshipDetailComponent,
     HomepageComponent,
     //LoginComponent
   ],
