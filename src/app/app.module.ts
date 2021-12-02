@@ -14,6 +14,7 @@ import { RegisterComponent } from './Views/Start/register/register.component';
 import { LoginComponent } from './Views/Start/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { CookieService } from 'ngx-cookie-service';
+import { SocialComponent } from './Components/social/social.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { CookieService } from 'ngx-cookie-service';
     StarshipsListComponent,
     HomepageComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,

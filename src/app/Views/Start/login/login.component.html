@@ -8,8 +8,6 @@
       placeholder="Email"
       required="required"
     />
-    <!--<div *ngIf="isEmailInvalid" class="invalid-feedback">Emails is required </div>-->
-
     <input
       type="password"
       [(ngModel)]="password"
@@ -17,8 +15,6 @@
       placeholder="Password"
       required="required"
     />
-    <!--<div *ngIf="isPasswordInvalid" class="invalid-feedback">Password is required</div>-->
-
     <button type="submit" (click)="login()">Log in</button>
   </form>
 </div>

@@ -1,0 +1,15 @@
+td, th, h4{
+    color: silver;
+    font-size: 1.5rem;
+}
+input{
+    background-color: silver;
+}
+.modal-content{
+    background: black;
+    color: silver;
+    border: 2px solid silver;
+}
+.btn-close{
+    background-color: silver;
+}

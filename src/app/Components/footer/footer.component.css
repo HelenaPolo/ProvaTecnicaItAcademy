@@ -1,0 +1,11 @@
+a{
+    font-size: x-large;
+    color: silver;
+    text-decoration: none;
+}
+p{
+    font-size: small;
+}
+footer{
+    border-top: 1px solid silver;
+}

@@ -1,68 +1,38 @@
-<div id="nav-external-links" class="social">
-  <ul id="social-links">
-      <li>
-        <a class="facebook" href="https://www.facebook.com/StarWars" target="_blank" rel="noopener noreferrer" data-cto="social" title="facebook">
-          <span class="facebook-icon"></span>
-        </a>
-      </li>
-      <li>
-        <a class="instagram" href="https://www.instagram.com/starwars/" target="_blank" rel="noopener noreferrer" data-cto="social" title="instagram">
-          <span class="instagram-icon"></span>
-        </a>
-      </li>
-      <li>
-        <a class="twitter" href="https://twitter.com/starwars" target="_blank" rel="noopener noreferrer" data-cto="social" title="twitter">
-          <span class="twitter-icon"></span>
-        </a>
-      </li>
-      <li>
-        <a class="youtube" href="https://www.youtube.com/user/starwars" target="_blank" rel="noopener noreferrer" data-cto="social" title="youtube">
-          <span class="youtube-icon"></span>
-        </a>
-      </li>
-  </ul>
-  <span class="sw-kids-container">
-    <a class="sw-kids" href="https://starwarskids.com/" target="_blank" rel="noopener noreferrer" title="Star Wars Kids" data-cto="swkids">
-      <span class="sw-kids-icon"></span>
-    </a>
-  </span>
-  <div class="container-fluid p-0 position-sticky top-0" id="nav-client">
-    <nav class="navbar nav-color navbar-expand-md">
-          <div class="container-fluid">
-              <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-client" aria-controls="navbar-client" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbar-client">
-                <ul class="navbar-nav mx-2 p-1 mb-2 mb-md-0 me-auto">
-                      <li class="nav-item my-1 my-md-0">
-                        <a class="nav-link" role="button" routerLink="/starships">starships</a>
-                      </li>
-                      <li class="nav-item mb-1 mb-md-0">
-                        <a class="nav-link" role="button" routerLink="/home">home</a>
-                      </li>
-
-                      <li class="nav-item">
-                        <!--<a class="nav-link" role="button" routerLink="/contact">{{ 'navbar-client.navbar-contact' | translate }}</a>-->
-                      </li>
-                      <li class="nav-item">
-                        <!--<a class="nav-link" role="button" routerLink="/terms">{{ 'navbar-client.navbar-terms' | translate }}</a>-->
-                      </li>
-                    </ul>
-                    <div class="d-flex">
-                      <button type="submit" class="btn btn-erp-blue me-3">
-                        <a routerLink="/login" class="text-erp-white">
-                          login
-                          <i class="fas fa-sign-in-alt"></i>
-                        </a>
-                      </button>
-                      <button type="submit" class="btn btn-erp-blue me-3">
-                        <a routerLink="/register" class="text-erp-white">
-                          sign-up
-                          <i class="fas fa-user-plus"></i>
-                        </a>
-                      </button>
-                  </div>
-              </div>
-          </div>
-      </nav>
+<div id="nav" class="social container-fluid row">
+  <app-social></app-social>
+  <div class="row justify-content-center mb-3">
+    <span class="logo text-center">
+      <img src="../../../assets/img/sw_logo_stacked.png">
+    </span>
   </div>
+  <div class="container-fluid p-0 position-sticky row" id="nav-client">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid"> 
+        <div class="collapse navbar-collapse col-12" id="navbar-client">
+          <ul class="navbar-nav mx-2 p-0 mb-2 mb-md-0 me-auto">
+            <li class="nav-item my-1 my-md-0">
+              <a class="nav-link" role="button" routerLink="/home">HOME</a>
+            </li>
+            <li class="nav-item mb-1 mb-md-0">
+              <a class="nav-link" role="button" routerLink="/starships">STARSHIPS</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button type="submit" class="btn btn-erp-blue me-3">
+              <a routerLink="/login" class="log-link">
+                LOGIN
+                <i class="fas fa-sign-in-alt"></i>
+              </a>
+            </button>
+            <button type="submit" class="btn btn-erp-blue me-3">
+              <a routerLink="/register" class="log-link">
+                SIGN-UP
+                <i class="fas fa-user-plus"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

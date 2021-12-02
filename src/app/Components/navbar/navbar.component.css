@@ -1,0 +1,21 @@
+#nav{
+    background: url("../../../assets/img/nightsky.jpeg");
+}
+a{
+    font-size: x-large;
+    color: silver;
+    text-decoration: none;
+}
+.btn{
+    border-left: 1px solid silver;
+    padding: .5rem 2rem .5rem 2rem;
+}
+#navbar-client{
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    background-color: black;
+}
+.nav-link{
+    border-right: 1px solid silver;
+}
+

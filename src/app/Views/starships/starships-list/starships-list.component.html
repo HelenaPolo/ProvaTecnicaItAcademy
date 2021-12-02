@@ -8,8 +8,7 @@
             placeholder="Search..." aria-label="Search">
         </div>
       </div>
-    </div>
-  
+    </div> 
     <!-- Starship data -->
     <div class="table-responsive mb-5">
       <table class="table align-middle">
@@ -23,11 +22,7 @@
           <tr *ngFor="let starship of starships, let i = index" 
           [class.selected]='starship === selectedStarship'>
             <td (click)='goStarshipDeatail(i)' >{{ starship.name }}</td>
-            <td>{{ starship.model }}</td>
-            
-            <!--<app-starship-detail [starship]='selectedStarship'></app-starship-detail>-->
-
-            
+            <td>{{ starship.model }}</td>            
             <!-- Modal -->
             <div class="modal fade modalMessage" id="starshipDetail" tabindex="-1" aria-hidden="true">
               <div class="modal-dialog">
@@ -54,8 +49,6 @@
                       <div><span>max_atmosphering_speed: </span>{{this.max_atmosphering_speed}}</div>
                       <div><span>passengers: </span>{{this.passengers}}</div>
                       <div><span>starship_class: </span>{{this.starship_class}}</div>
-
-
                     </div>
                   </div>
                 </div>
